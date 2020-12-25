@@ -1,7 +1,17 @@
 ---
-layout: page
+layout: archive
 title: About
 permalink: /about/
+
+#excerpt: "This post should [...]"
+header:
+  overlay_image: /assets/img/banner.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
+  #caption: "Meadowlark Botanical Gardens, Vienna, VA"
+  actions:
+    - label: "curriculum vitae"
+      url: /assets/doc/CV_HHaberkern.pdf
+
 ---
 
 I'm a neuroscientist interested in understanding animal behavior, in particular in the context of navigation. If I'm not in the lab or analyzing data, I like to sew or observe animals.
@@ -11,4 +21,4 @@ You can learn more about my sewing adventures on [my blog](https://sendthoughtsi
 
 If you are interested in my programing project, check out [Github](https://github.com/hjmh){:target="_blank"}.
 
-For my publication record please visit [Publications](https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao) and for my professional profile visit [LinkedIn](https://www.linkedin.com/in/hannah-haberkern-24a73483/){:target="_blank"}.
+For my publication record go to [Publications](/pubs/) and for my professional profile visit  [LinkedIn](https://www.linkedin.com/in/hannah-haberkern-24a73483/){:target="_blank"}.
