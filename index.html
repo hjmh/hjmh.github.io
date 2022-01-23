@@ -1,113 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
-
-    <title>Hannah Haberkern - Home</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/assets/css/style.css" rel="stylesheet">
-    <link href="/assets/css/fontawesome-all.css" rel="stylesheet">
-    <link href="/assets/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/assets/css/nv.d3.css" rel="stylesheet">
-
-    <!-- add favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-
-</head>
-
-
-    <body>
-        <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="/assets/ico/HHicon.png" alt="Hannah Haberkern"x>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">HOME</a></li>
-        <li ><a href="/about/">ABOUT</a></li>
-        <li ><a href="/research/">RESEARCH</a></li>
-        <li ><a href="/pubs/">PUBLICATIONS</a></li>
-        <li><a href="https://hannahsews.com" target="_blank">BLOG</a></li>
-        <li ><a href="/contact/"><i class="far fa-edit fa-lg"></i></a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-
-
-            <div id="headerwrap"  class="tinted-image">
-  <div class="bannercover">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3">
-                <h1 style="text-transform: uppercase;">Hannah Haberkern</h1>
-                <div class="ani-line"></div>
-                <h3 style="color: white; font-weight: 500;">Welcome to my personal website.</h3>
-                <h3 class="fadetext" style="font-size:20px;">I'm a neuroscientist interested in <br>
-                   how complex behaviors arise from the interplay <br>
-                   of an animal’s nervous system and its environment. <br>
-                </h3>
-                <br>
-                <br>
-
-                <section class="fadetextnext">
-                  <h3 style="color:white; font-size:20px;">
-                    Learn more
-                  </h3>
-                  <a href="#slide" id="top" style="color:#ffccb3"><i class="fas fa-chevron-down fa-2x"></i></a>
-                </section>
-
-            </div>
-        </div><!-- /row -->
-    </div> <!-- /container -->
-  </div>
-</div><!-- /headerwrap -->
-
-<section id="slide">
-</section>
-
-<div id="mybanner">
-  <div class="container">
-    <h4 style="color: #304150">
-      "To doubt everything, or, to believe everything, are two equally convenient solutions; both dispense with the necessity of reflection."
-    </h4>
-    <h5 class="quoteSouce">
-      - Henri Poincare, <i> La Science et l'Hypothèse (1905)</i>
-    </h5>
-  </div>
-</div> <!-- /container -->
-
+---
+layout: index
+title: Home
+permalink: /
+---
 
 <div class="container mtb">
   <div class="row">
     <div class="landcontainer">
       <div class="landitem">
-        <img class="img-responsive" src="/assets/img/profilePic.jpg" alt="Hannah Haberkern">
+        <img class="img-responsive" src="{{ "/assets/img/profilePic.jpg" | prepend: site.baseurl }}" alt="Hannah Haberkern">
       </div>
       <div class="landitem">
         <h3>About Me</h3>
@@ -149,25 +50,25 @@
 
       </div>
       <div class="landitem">
-        <img class="img-responsive" src="/assets/img/home/researchPic.jpg" alt="Research">
+        <img class="img-responsive" src="{{ "/assets/img/home/researchPic.jpg" | prepend: site.baseurl }}" alt="Research">
       </div>
     </div>
   </div>
   <div class="row">
     <div class="landcontainer">
       <div class="landitem">
-        <img class="img-responsive" src="/assets/img/home/fabricPic.jpg" alt="Sewing">
+        <img class="img-responsive" src="{{ "/assets/img/home/fabricPic.jpg" | prepend: site.baseurl }}" alt="Sewing">
       </div>
       <div class="landitem">
         <h3>Sewing</h3>
         <div class="hline"></div>
-        <p> I greatly enjoy designing and sewing quils, clothes and other objects made from fabric.
+        <p> I greatly enjoy designing and sewing quilts, clothes and other objects made from fabric.
           I learned how to sew from my mother and grandmother and many of my favorite
           childhood memories evolve around this activity.
           These days sewing serves as a compensatory activity to research —
           as a creative outlet and by making me feel productive.</p>
         <p>
-          <a href="https://sendthoughtsintothevoid.com/" target="_blank"><i class="fas fa-angle-right"></i>
+          <a href="{{site.blogurl}}" target="_blank"><i class="fas fa-angle-right"></i>
             To my blog
           </a>
         </p>
@@ -187,240 +88,3 @@
       <p style="margin-bottom:3cm;"></p>
     </div><!--/container -->
 </div><!--/service -->
-
-
-
-        <div id="footerwrap">
-    <div class="container">
-        <div class="row">
-
-            <!--
-            <div class="col-lg-3">
-                <h4>About</h4>
-                <div class="hline-w"></div>
-                <p>Hi, I'm Hannah. I'm a neuroscientist interested in understanding (neural) mechanisms underlying animal behavior. If I'm not in the lab or analysing data, I like to sew, garden or observe animals.</p>
-            </div>
-            -->
-
-            <div class="col-lg-4">
-                <h4>Contact</h4>
-                <div class="hline-w"></div>
-                <p>
-                  <a href="mailto:haberkernh@janelia.hhmi.org">e-mail:</a> haberkernh (at) janelia.hhmi.org<br/>
-                </p>
-                <p>
-                    
-                        <a href="https://github.com/hjmh" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
-                          <span class="sr-only">github</span>
-                        </a>
-                    
-                        <a href="https://www.linkedin.com/in/hannah-haberkern-24a73483" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
-                          <span class="sr-only">linkedin</span>
-                        </a>
-                    
-                        <a href="https://www.instagram.com/verdigrissewing" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
-                          <span class="sr-only">instagram</span>
-                        </a>
-                    
-                        <a href="https://twitter.com/HannahHaberkern" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
-                          <span class="sr-only">twitter</span>
-                        </a>
-                    
-                        <a href="https://scholar.google.com/citations?user=rTECIQwAAAAJ&hl=en&oi=ao" class="btn-social btn-outline" target="_blank">
-                          <i class="fab fa-scholar fa-3x" aria-hidden="true"></i>
-                          <span class="sr-only">scholar</span>
-                        </a>
-                    
-                </p>
-            </div>
-
-            <div class="col-lg-8">
-                <h4>Credits</h4>
-                <div class="hline-w"></div>
-                <p>
-                  This website is based on a heavily modified Jekyll
-                  <a href="https://github.com/st4ple/solid-jekyll" target="_blank">
-                  Solid theme</a>. Some of the adjustments of the layout and design were
-                  inspired by the <a href="https://html5up.net/spectral" target="_blank">Spetral theme</a> from HTML5 UP.
-                  The map on the contact page was taken from <a href="https://www.openstreetmap.org" target="_blank">
-                  Open Steet Map</a> under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">
-                  CC BY-SA</a> license.
-                </p>
-            </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/footerwrap -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/retina-1.1.0.js"></script>
-<script src="/assets/js/jquery.hoverdir.js"></script>
-<script src="/assets/js/jquery.hoverex.min.js"></script>
-<script src="/assets/js/jquery.prettyPhoto.js"></script>
-<script src="/assets/js/jquery.isotope.min.js"></script>
-<script src="/assets/js/custom.js"></script>
-<script src="/assets/js/path.js"></script>
-<script src="/assets/js/hotspots.js"></script>
-<script src="/assets/js/Chart.min.js"></script>
-<script src="/assets/js/mycharts.js"></script>
-
-<script>
-  $('.multi-item-carousel .item').each(function(){
-    var next = $(this).next();
-    if (!next.length) next = $(this).siblings(':first');
-    next.children(':first-child').clone().appendTo($(this));
-  });
-  $('.multi-item-carousel .item').each(function(){
-    var prev = $(this).prev();
-    if (!prev.length) prev = $(this).siblings(':last');
-    prev.children(':nth-last-child(2)').clone().prependTo($(this));
-  });
-</script>
-
-<script>
-$('a[href^="#slide"]').on('click', function(event) {
-
-    var target = $(this.getAttribute('href'));
-
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
-});
-</script>
-
-
-
-<script>
-
-// Portfolio
-(function($) {
-	"use strict";
-  var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
-
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);
-		}
-
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
-         });
-         return false;
-    });
-
-		function getColumnNumber() {
-			var winWidth = $(portfoliowrap).width(),
-			columnNumber = 1;
-
-        if (winWidth > 800) {
-  				columnNumber = 3;
-  			}else if (winWidth > 600) {
-  				columnNumber = 2;
-  			}
-				return columnNumber;
-			}
-
-			function setColumns() {
-				var winWidth = $(portfoliowrap).width(),
-				columnNumber = getColumnNumber(),
-				itemWidth = Math.floor(winWidth / columnNumber);
-
-				$container.find('.portfolio-item').each(function() {
-					$(this).css( {
-					width : itemWidth + 'px'
-				});
-			});
-		}
-
-		function setPortfolio() {
-			setColumns();
-			$container.isotope('reLayout');
-		}
-
-		$container.imagesLoaded(function () {
-			setPortfolio();
-		});
-
-		$(window).on('resize', function () {
-		setPortfolio();
-	});
-})(jQuery);
-</script>
-
-<script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-    </body>
-</html>
